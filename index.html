@@ -5,11 +5,19 @@
   <title>TJ's Github Pages</title>
   <link rel="stylesheet" href="normalize.css">
   <style>
+    html {
+      box-sizing: border-box;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    html, body {
+      font-family: Ubuntu, sans-serif;
+    }
     body {
       padding-top: 20px;
       padding-bottom: 20px;
     }
-
     .container {
       padding-left: 15px;
       padding-right: 15px;
@@ -17,17 +25,67 @@
       margin-right: auto;
       max-width: 730px;
     }
-
     .header-name {
       text-align: center;
+      margin-top: 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 10px;
+      text-align: center;
+    }
+    table, th, td {
+      border: 1px solid black;
+    }
+    thead th:nth-child(1) {
+      width: 20%;
+    }
+    thead th:nth-child(2) {
+      width: 50%;
+    }
+    thead th:nth-child(3) {
+      width: 15%;
+    }
+    thead th:nth-child(4) {
+      width: 15%;
+    }
+    tbody > tr:nth-child(odd) {
+      background-color: #f9f9f9;
+    }
+    tbody > tr:hover {
+      background-color: #e5e5e5;
+    }
+    /* make table scrollable on mobile */
+    .table-container {
+      overflow-x: auto;
+    }
+    /* ensure table caption is completely visible on mobile before scrolling table*/
+    @media screen and (max-width: 500px) {
+      table caption {
+        max-width: 85vw;
+      }
     }
   </style>
 </head>
 <body>
 <div class="container">
   <h1 class="header-name">TJ Santos</h1>
-  <h3></h3>
-  <table border="1">
+  <h3>Sample Work</h3>
+  <p>Source code is available on <a href="https://github.com/tjsantos">github</a>.</p>
+  <h4>Advanced CSS Example</h4>
+  <h4>JavaScript 30</h4>
+  <h4>Todo using React</h4>
+  <h4>Nature in Code Simulations</h4>
+  <h4>Reminders</h4>
+  <h4>Periscopin</h4>
+  <h4>Quads</h4>
+  <h4>Practice IPA</h4>
+  <h4>Wiktionary Explorer</h4>
+  <div class="table-container">
+  <table>
     <caption>
       <p>1,000+ hours of courses taken for Computer Science and Web Development</p>
     </caption>
@@ -550,6 +608,7 @@
     </tr>
     </tbody>
   </table>
+  </div>
 </div>
 </body>
 </html>
