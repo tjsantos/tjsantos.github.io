@@ -8,13 +8,33 @@
   <meta name=viewport content="width=device-width, initial-scale=1">
 </head>
 <body>
-<header>
+<header class="header">
   <div class="container">
-    <h1 class="header-name">TJ Santos</h1>
+    <nav class="navbar">
+      <div class="flex-item-wrapper">
+        <div class="baseline-wrapper">
+          <a class="nav-link" href="#">
+            <h2>TJ Santos</h2>
+          </a>
+        </div>
+      </div>
+      <div class="flex-item-wrapper">
+        <div class="baseline-wrapper">
+          <ul class="navbar-nav">
+            <li>
+              <a class="nav-link" href="#work">work</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#courses">courses</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
 </header>
 <main>
-  <section>
+  <section id="work">
     <div class="container">
       <h3>Sample Work</h3>
       <p>Source code is available on <a href="https://github.com/tjsantos" target="_blank" rel="noopener">github</a>.</p>
@@ -66,8 +86,8 @@
       <hr>
     </div>
   </section>
-  <section id="courses" class="table-container">
-    <div class="container">
+  <section id="courses">
+    <div class="container table-container">
       <table>
         <caption>
           <h3>1,000+ hours of courses completed for Computer Science and Web Development</h3>

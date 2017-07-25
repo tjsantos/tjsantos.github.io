@@ -1,3 +1,4 @@
+/* TODO: nav-link:hover, scrollspy, scss and autoprefixer */
 
 html {
     box-sizing: border-box;
@@ -12,8 +13,9 @@ html, body {
 }
 
 body {
-    padding-top: 20px;
+    padding-top: 3rem;
     padding-bottom: 20px;
+    line-height: 1.5;
 }
 
 .container {
@@ -24,17 +26,56 @@ body {
     max-width: 46rem;
 }
 
-.header-name {
-    text-align: center;
+.header {
+    background-color: #292b2c;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+/* fix scrolling to anchors with fixed header */
+/* http://nicolasgallagher.com/jump-links-and-viewport-positioning/demo/#method-D */
+[id] {
+    border-top: 75px solid transparent;
+    margin-top: -75px;
+    background-clip: padding-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    /* margin to remove container padding; note nav-links have own padding */
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.navbar-nav {
+    display: inline-flex;
+    list-style: none;
+    padding-left: 0;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
-li + li {
-    margin-top: 0.5em;
+.nav-link {
+    color: inherit;
+    text-decoration: inherit;
+    padding: .5em 1em;
+    display: block;  /* to give list items padding */
 }
 
-li {
-    line-height: 1.3;
+.nav-link h2 {
+    margin: 0;
+}
+
+.flex-item-wrapper .baseline-wrapper {
+    /* to allow alignment to the last baseline */
+    /* The baseline of an 'inline-block' is the baseline of its last line box in the normal flow */
+    display: inline-block;
 }
 
 table {
