@@ -1,4 +1,4 @@
-/* TODO: nav-link:hover, scrollspy, scss and autoprefixer */
+/* TODO: scrollspy, scss and autoprefixer */
 
 html {
     box-sizing: border-box;
@@ -66,6 +66,10 @@ body {
     text-decoration: inherit;
     padding: .5em 1em;
     display: block;  /* to give list items padding */
+}
+
+.nav-link:hover {
+    opacity: 0.8;  /* color: hsla(0, 0%, 100%, 0.8) */
 }
 
 .nav-link h2 {
