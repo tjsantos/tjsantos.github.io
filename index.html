@@ -36,13 +36,71 @@
 <main>
   <section id="work">
     <div class="container">
-      <h3>Projects</h3>
-      <p>Source code is available on <a href="https://github.com/tjsantos" target="_blank" rel="noopener">github</a>.</p>
+      <header class="d-flex align-items-baseline">
+      <h1 class="mb-0">Projects</h1>
+      <div class="ml-auto">
+        Source code is available on
+        <a href="https://github.com/tjsantos" target="_blank" rel="noopener">github</a>.
+      </div>
+      </header>
 
-      <!-- coming soon
-      <h4>Todo using React</h4>
-      <h4>Reminders</h4>
-      -->
+      <h2>Computer Graphics</h2>
+
+      <h4>
+        <a href="https://tjsantos.github.io/graphics/rasterizer" target="_blank" rel="noopener">
+          Rasterizer
+        </a>
+      </h4>
+      <ul>
+        <li>Implemented a rasterizer in C++ that renders SVG files with anti-aliasing and texture mapping.</li>
+      </ul>
+
+      <h4>
+        <a href="https://github.com/tjsantos/graphics" target="_blank" rel="noopener">
+          Mesh Editor
+        </a>
+      </h4>
+      <ul>
+        <li>Implemented a rasterizer in C++ that renders SVG files with anti-aliasing and texture mapping.</li>
+      </ul>
+
+      <h4><a href="https://tjsantos.github.io/quads" target="_blank" rel="noopener">Quads</a></h4>
+      <ul><li>Computational pixel art: animate quadtrees of images using their color statistics</li></ul>
+
+      <h4><a href="https://tjsantos.github.io/natureincode/" target="_blank" rel="noopener">Nature in Code Simulations</a></h4>
+      <ul><li>Biology simulations and visualizations using JavaScript</li></ul>
+
+      <h2>Data Processing</h2>
+
+      <h4>
+        N-body Simulation
+      </h4>
+      <ul>
+        <li>
+          Parallelized an N-body simulation in C++ using the MPI (Message Passing Interface) protocol
+          for high-performance computing, with optimizations using Barnes-Hut approximation
+          algorithms.
+        </li>
+        <li>
+          Programmed a visualization of the simulation using OpenGL.
+        </li>
+      </ul>
+
+      <h4>
+        K-Means Machine Learning
+      </h4>
+      <ul>
+        <li>
+          Optimized a k-means machine learning algorithm using C++ and CUDA GPU programming.
+        </li>
+      </ul>
+
+      <h4><a href="https://github.com/tjsantos/wiktionary-explorer" target="_blank" rel="noopener">Wiktionary Explorer</a></h4>
+      <ul>
+        <li>Python program to parse wiktionary's wikitext data format to extract and transform pronunciation data into a structured format</li>
+      </ul>
+
+      <h2>Web Development</h2>
 
       <h4><a href="https://codepen.io/collection/DaBwwK/" target="_blank" rel="noopener">JavaScript 30</a></h4>
       <ul>
@@ -50,47 +108,58 @@
         <li>Based on the <a href="https://javascript30.com/" target="_blank" rel="noopener">30-day coding challenge by Wes Bos</a></li>
       </ul>
 
-      <h4><a href="http://practiceipa.herokuapp.com/" target="_blank" rel="noopener">Practice IPA</a></h4>
+      <h4><a href="https://codepen.io/tjsantos/pen/jwvPzB" target="_blank" rel="noopener">Advanced CSS Example</a></h4>
+      <ul>
+        <li>Static website landing page featuring responsive design</li>
+        <li>Built for
+          <a href="https://www.edx.org/course/advanced-css-concepts-microsoft-dev218x" target="_blank" rel="noopener">
+            Advanced CSS Concepts course</a>
+          by Microsoft
+        </li>
+      </ul>
+
+      <h4>
+        <a href="http://practiceipa.herokuapp.com/" target="_blank" rel="noopener">Practice IPA</a>
+        (no longer maintained)
+      </h4>
       <ul>
         <li>Find word pronunciation with phonetic symbols (IPA) and audio</li>
         <li>Quiz yourself and save progress on alphabets, frequency lists, and other word lists</li>
         <li>Tech stack: Django (backend), Amazon S3 (file service), Heroku (deployment), Bootstrap (frontend)</li>
       </ul>
 
-<!--      <h4><a href="http://periscopin.herokuapp.com/" target="_blank" rel="noopener">Periscopin</a></h4>-->
-<!--      <ul>-->
-<!--        <li>Live stream agreggator of periscope broadcasts, displayed on a world map</li>-->
-<!--        <li>Information obtained using Twitter API and web scraping from <a href="https://www.periscope.tv/" target="_blank">periscope.tv</a></li>-->
-<!--      </ul>-->
-
-      <h4><a href="https://codepen.io/tjsantos/pen/jwvPzB" target="_blank" rel="noopener">Advanced CSS Example</a></h4>
+      <h4>
+        <a href="http://periscopin.herokuapp.com/" target="_blank" rel="noopener">Periscopin</a>
+        (no longer maintained)
+      </h4>
       <ul>
-        <li>Static website landing page featuring responsive design</li>
-        <li>Built for
-          <a href="https://www.edx.org/course/advanced-css-concepts-microsoft-dev218x" target="_blank" rel="noopener">
-              Advanced CSS Concepts course</a>
-          by Microsoft
-        </li>
+        <li>Live stream agreggator of periscope broadcasts, displayed on a world map</li>
+        <li>Information obtained using Twitter API and web scraping from <a href="https://www.periscope.tv/" target="_blank">periscope.tv</a></li>
       </ul>
 
-      <h4><a href="https://tjsantos.github.io/quads" target="_blank" rel="noopener">Quads</a></h4>
-      <ul><li>Computational pixel art: animate quadtrees of images using their color statistics</li></ul>
-
-      <h4><a href="https://tjsantos.github.io/natureincode/" target="_blank" rel="noopener">Nature in Code Simulations</a></h4>
-      <ul><li>Biology simulations using JavaScript</li></ul>
-
-      <h4><a href="https://github.com/tjsantos/wiktionary-explorer" target="_blank" rel="noopener">Wiktionary Explorer</a></h4>
-      <ul>
-        <li>Python program to parse wiktionary's wikitext data format to extract and transform pronunciation data into a structured format</li>
-      </ul>
       <hr>
     </div>
   </section>
-  <section id="courses">
-    <div class="container table-container">
+  <section id="courses" class="container">
+    <h1>Courses</h1>
+    <h3>
+      Current:<br>
+      M.S. Computer Science at UT Austin
+    </h3>
+    <p>
+      Computer Graphics, Game Programming Paradigms, Parallel Systems, Numerical Linear Algebra,
+      Optimization, Advanced Operating Systems, Advanced Algorithms
+    </p>
+    <h3>
+      Past:<br>
+      Computer Science at UC Irvine<br>
+      Physics at UC Berkeley
+    </h3>
+
+    <div class="table-container">
       <table>
         <caption>
-          <h3>2,000+ hours of online courses completed for Computer Science and Web Development</h3>
+          <h3>Online Courses: 2,000+ hours completed for Computer Science and Web Development</h3>
         </caption>
         <thead>
         <tr>

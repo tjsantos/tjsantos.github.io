@@ -131,3 +131,21 @@ tbody > tr:hover {
         max-width: 85vw;
     }
 }
+
+/* utilities */
+
+.d-flex {
+    display: flex;
+}
+.ml-auto {
+    margin-left: auto;
+}
+.align-items-baseline {
+    align-items: baseline;
+}
+.mb-0 {
+    margin-bottom: 0;
+}
+.underline {
+    text-decoration: underline;
+}
