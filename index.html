@@ -36,14 +36,19 @@
 <main>
   <section id="work">
     <div class="container">
-      <header class="d-flex align-items-baseline">
-      <h1 class="mb-0">Projects</h1>
-      <div class="ml-auto">
-        Source code is available on
-        <a href="https://github.com/tjsantos" target="_blank">github</a>.
+      <header class="d-flex align-items-last-baseline mt-8">
+      <h1 class="m-0">Projects</h1>
+      <div class="ml-auto text-align-right">
+        <p class="m-0">
+        Public source code on
+        <a href="https://github.com/tjsantos" target="_blank">GitHub</a>.
+        </p>
+        <p class="m-0">Private source code on request.</p>
+
       </div>
       </header>
 
+      <hr>
       <h2>Computer Graphics</h2>
 
       <h4>
@@ -87,6 +92,19 @@
         <li>Uses adaptive sampling to reduce noise and improve rendering quality</li>
       </ul>
 
+      <h4>
+        <!--         <a href="https://github.com/tjsantos/graphics" target="_blank"> -->
+        Cloth Simulation (coming soon)
+        <!--         </a> -->
+      </h4>
+      <ul>
+        <li>Real-time physical simulation of cloth with mass-spring computational modeling</li>
+        <li>
+          GLSL shader implementations for diffuse lighting, Blinn-Phong shading,
+          texture mapping, bump/displacement mapping, and environment-mapped reflections
+        </li>
+      </ul>
+
       <h4><a href="https://tjsantos.github.io/quads" target="_blank">Quads</a></h4>
       <ul><li>Computational pixel art: animate quadtrees of images using their color statistics</li></ul>
 
@@ -106,7 +124,7 @@
           algorithms
         </li>
         <li>
-          Includes a visualization of the simulation using OpenGL.
+          Includes a visualization of the simulation using OpenGL
         </li>
       </ul>
 
@@ -119,11 +137,11 @@
         </li>
       </ul>
 
-      <h4>
+      <h4 id="distfit">
         Distfit<br>
         (Undergraduate Research Project for
         <a href="https://www.ics.uci.edu/~wayne/research/students/" target="_blank">
-          Hayes's Group at UCI
+          Wayne Hayes's Group at UCI
         </a>)
       </h4>
       <ul>
@@ -150,8 +168,8 @@
           manages corresponding approval workflows
         </li>
         <li>
-          Users can edit rules using extensive configuration options, approve or deny orders, reprocess requests,
-          and view status information, all from an intuitive web interface
+          With extensive configuration options, users can edit business rules, approve or deny orders,
+          reprocess requests, and have comprehensive status updates, all from an intuitive web interface
         </li>
         <li>
           Frontend UI using Javascript and React, backend API using Go, and
@@ -162,22 +180,26 @@
         </li>
       </ul>
 
-      <h4>
+      <h4 id="vesl">
         <a href="https://vesl.jpl.nasa.gov/" target="_blank">
           Virtual Earth System Laboratory
         </a>
         <br>
         (Undergraduate Research Programming for JPL /
         <a href="https://www.ics.uci.edu/~wayne/research/students/" target="_blank">
-          Hayes's Group at UCI
+          Wayne Hayes's Group at UCI
         </a>)
       </h4>
-
-
+      <ul>
+        <li>
+          Earth system science simulations and testing using JavaScript
+          and Playwright for web browser automation
+        </li>
+      </ul>
 
       <h4><a href="https://codepen.io/collection/DaBwwK/" target="_blank">JavaScript 30</a></h4>
       <ul>
-        <li>Mini-projects using vanilla JavaScript</li>
+        <li>A collection of ~30 mini-projects using vanilla JavaScript</li>
         <li>Based on the <a href="https://javascript30.com/" target="_blank">30-day coding challenge by Wes Bos</a></li>
       </ul>
 
@@ -215,20 +237,52 @@
   </section>
   <section id="courses" class="container">
     <h1>Courses</h1>
+
     <h3>
-      Current:<br>
+      <em>Current:</em><br>
       M.S. Computer Science at UT Austin
     </h3>
-    <p>
-      Computer Graphics, Game Programming Paradigms, Parallel Systems, Numerical Linear Algebra,
-      Optimization, Advanced Operating Systems, Advanced Algorithms
-    </p>
-    <h3>
-      Past:<br>
-      Computer Science at UC Irvine<br>
-      Physics at UC Berkeley
-    </h3>
+    <ul>
+      <li>Computer Graphics</li>
+      <li>Parallel Systems</li>
+      <li>Numerical Linear Algebra</li>
+      <li>Optimization</li>
+      <li>Advanced Operating Systems</li>
+      <li>Advanced Algorithms</li>
+      <li>Deep Learning</li>
+    </ul>
 
+    <h3>
+      <em>Previous:</em><br>
+      B.A. Physics at UC Berkeley
+    </h3>
+    <h3>
+      Computer Science at UC Irvine
+    </h3>
+    <ul>
+      <li>Undergraduate Research
+        <ul>
+          <li><a href="#distfit">Distfit</a></li>
+          <li><a href="#vesl">VESL</a></li>
+        </ul>
+      </li>
+      <li>Computational Geometry</li>
+      <li>Computer Simulation</li>
+      <li>Applications of Probability in Computer Science</li>
+      <li>Operating Systems</li>
+      <li>Project in Databases and Web Applications</li>
+      <li>Computer Networks</li>
+      <li>Compilers</li>
+      <li>Programming Languages</li>
+      <li>Upper Division Math
+        <ul>
+          <li>Linear Algebra</li>
+          <li>Real Analysis</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr>
     <div class="table-container">
       <table>
         <caption>

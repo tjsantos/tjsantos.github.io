@@ -140,11 +140,20 @@ tbody > tr:hover {
 .ml-auto {
     margin-left: auto;
 }
-.align-items-baseline {
-    align-items: baseline;
+.align-items-last-baseline {
+    align-items: last baseline;
+}
+.m-0 {
+    margin: 0;
 }
 .mb-0 {
     margin-bottom: 0;
+}
+.mt-8 {
+    margin-top: 2rem;
+}
+.text-align-right {
+    text-align: right;
 }
 .underline {
     text-decoration: underline;
