@@ -1,445 +1,534 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>TJ's Github Pages</title>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="style.css">
-  <meta name=viewport content="width=device-width, initial-scale=1">
-</head>
-<body>
-<header class="header">
-  <div class="container">
-    <nav class="navbar">
-      <div class="flex-item-wrapper">
-        <div class="baseline-wrapper">
-          <a class="nav-link" href="#">
-            <h2>TJ Santos</h2>
-          </a>
-        </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>TJ's Github Pages</title>
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="flex-item-wrapper">
+            <div class="baseline-wrapper">
+              <a class="nav-link" href="#">
+                <h2>TJ Santos</h2>
+              </a>
+            </div>
+          </div>
+          <div class="flex-item-wrapper">
+            <div class="baseline-wrapper">
+              <ul class="navbar-nav">
+                <li>
+                  <a class="nav-link" href="#work">work</a>
+                </li>
+                <li>
+                  <a class="nav-link" href="#courses">courses</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
       </div>
-      <div class="flex-item-wrapper">
-        <div class="baseline-wrapper">
-          <ul class="navbar-nav">
+    </header>
+    <main>
+      <section id="work">
+        <div class="container">
+          <header class="d-flex align-items-last-baseline mt-8">
+            <h1 class="m-0">Projects</h1>
+            <div class="ml-auto text-align-right">
+              <p class="m-0">
+                Public source code on
+                <a href="https://github.com/tjsantos" target="_blank">GitHub</a
+                >.
+              </p>
+            </div>
+          </header>
+
+          <hr />
+          <h2>Web Development</h2>
+
+          <h4>
+            Front-end Web Development at
+            <a href="https://www.flux.ai/p">Flux.ai</a> (Jan. 2023 - Apr. 2024)
+          </h4>
+          <ul>
             <li>
-              <a class="nav-link" href="#work">work</a>
+              Implemented bug fixes and features for a browser-based PCB editor,
+              with a focus on graphics, rendering, and performance
             </li>
             <li>
-              <a class="nav-link" href="#courses">courses</a>
+              Shipped code on instancing, camera behavior, visual testing,
+              raycasting, GPU picking with custom GLSL shaders, stenciling, and
+              hover selection/interaction performance
+            </li>
+            <li>
+              Developed primarily using TypeScript, Three.js, React, React Three
+              Fiber, WebGL, and GLSL
             </li>
           </ul>
+
+          <h4>
+            Approval Workflow Engine (Intern Project for
+            <a href="https://www.govaris.com" target="_blank">Varis</a>, Summer
+            2022)
+          </h4>
+          <ul>
+            <li>
+              A business rules engine that processes purchase requests and
+              manages corresponding approval workflows
+            </li>
+            <li>
+              With extensive configuration options, users can edit business
+              rules, approve or deny orders, reprocess requests, and have
+              comprehensive status updates, all from an intuitive web interface
+            </li>
+            <li>
+              Frontend UI using Javascript and React, backend API using Go, and
+              database access/design using PostgreSQL
+            </li>
+            <li>
+              Includes unit and integration tests with over 80% code coverage
+              integrated into a CI/CD pipeline
+            </li>
+          </ul>
+
+          <h4 id="vesl">
+            <a href="https://vesl.jpl.nasa.gov/" target="_blank">
+              Virtual Earth System Laboratory
+            </a>
+            <br />
+            (Undergraduate Research Programming for JPL /
+            <a
+              href="https://www.ics.uci.edu/~wayne/research/students/"
+              target="_blank"
+            >
+              Wayne Hayes's Group at UCI</a
+            >, Winter 2020)
+          </h4>
+          <ul>
+            <li>
+              Earth system science simulations and testing using JavaScript and
+              Playwright for web browser automation
+            </li>
+          </ul>
+
+          <h4>
+            <a href="https://codepen.io/collection/DaBwwK/" target="_blank"
+              >JavaScript 30</a
+            >
+          </h4>
+          <ul>
+            <li>A collection of ~30 mini-projects using vanilla JavaScript</li>
+            <li>
+              Based on the
+              <a href="https://javascript30.com/" target="_blank"
+                >30-day coding challenge by Wes Bos</a
+              >
+            </li>
+          </ul>
+
+          <h4>
+            <a href="https://codepen.io/tjsantos/pen/jwvPzB" target="_blank"
+              >Advanced CSS Example</a
+            >
+          </h4>
+          <ul>
+            <li>Static website landing page featuring responsive design</li>
+            <li>
+              Built for
+              <a
+                href="https://www.edx.org/course/advanced-css-concepts-microsoft-dev218x"
+                target="_blank"
+              >
+                Advanced CSS Concepts course</a
+              >
+              by Microsoft
+            </li>
+          </ul>
+
+          <h4>
+            <a href="http://practiceipa.herokuapp.com/" target="_blank"
+              >Practice IPA</a
+            >
+            (no longer maintained)
+          </h4>
+          <ul>
+            <li>
+              Find word pronunciation with phonetic symbols (IPA) and audio
+            </li>
+            <li>
+              Quiz yourself and save progress on alphabets, frequency lists, and
+              other word lists
+            </li>
+            <li>
+              Tech stack: Django (backend), Amazon S3 (file service), Heroku
+              (deployment), Bootstrap (frontend)
+            </li>
+          </ul>
+
+          <h4>
+            <a href="http://periscopin.herokuapp.com/" target="_blank"
+              >Periscopin</a
+            >
+            (no longer maintained)
+          </h4>
+          <ul>
+            <li>
+              Live stream agreggator of periscope broadcasts, displayed on a
+              world map
+            </li>
+            <li>
+              Information obtained using Twitter API and web scraping from
+              <a href="https://www.periscope.tv/" target="_blank"
+                >periscope.tv</a
+              >
+            </li>
+          </ul>
+
+          <hr />
+          <h2>Computer Graphics</h2>
+
+          <h4>
+            <a
+              href="https://tjsantos.github.io/graphics/rasterizer"
+              target="_blank"
+            >
+              Rasterizer
+            </a>
+          </h4>
+          <ul>
+            <li>A rasterizer built in C++ that renders SVG files</li>
+            <li>
+              Supports texture mapping and anti-aliasing using trilinear
+              filtering with mipmaps
+            </li>
+          </ul>
+
+          <h4>
+            <!--         <a href="https://github.com/tjsantos/graphics" target="_blank"> -->
+            Mesh Editor
+            <!--         </a> -->
+          </h4>
+          <ul>
+            <li>
+              A mesh editor built in C++ that can manipulate geometric mesh
+              model data
+            </li>
+            <li>
+              Features include Bézier surface modeling, local remeshing
+              operations such as edge flips and edge splits, and mesh upsampling
+              via loop subdivision
+            </li>
+          </ul>
+
+          <h4>
+            <a
+              href="https://tjsantos.github.io/graphics/ray-tracer"
+              target="_blank"
+            >
+              Ray Tracer
+            </a>
+          </h4>
+          <ul>
+            <li>
+              A physically based renderer using path tracing for global
+              illumination
+            </li>
+            <li>
+              Uses a bounding volume hierarchy (BVH) as an acceleration
+              structure for ray-object intersection
+            </li>
+            <li>
+              Uses adaptive sampling to reduce noise and improve rendering
+              quality
+            </li>
+          </ul>
+
+          <h4>
+            <!--         <a href="https://github.com/tjsantos/graphics" target="_blank"> -->
+            Cloth Simulation
+            <!--         </a> -->
+          </h4>
+          <ul>
+            <li>
+              Real-time physical simulation of cloth with mass-spring
+              computational modeling
+            </li>
+            <li>
+              GLSL shader implementations for diffuse lighting, Blinn-Phong
+              shading, texture mapping, bump/displacement mapping, and
+              environment-mapped reflections
+            </li>
+          </ul>
+
+          <h4>
+            <a href="https://tjsantos.github.io/quads" target="_blank">Quads</a>
+          </h4>
+          <ul>
+            <li>
+              Computational pixel art: animate quadtrees of images using their
+              color statistics
+            </li>
+          </ul>
+
+          <h4>
+            <a href="https://tjsantos.github.io/natureincode/" target="_blank"
+              >Nature in Code Simulations</a
+            >
+          </h4>
+          <ul>
+            <li>Biology simulations and visualizations using JavaScript</li>
+          </ul>
+
+          <hr />
+          <h2>Data Processing</h2>
+
+          <h4>N-body Simulation</h4>
+          <ul>
+            <li>
+              A parallelized N-body simulation in C++ using the MPI (Message
+              Passing Interface) protocol for high-performance computing, with
+              optimizations using Barnes-Hut approximation algorithms
+            </li>
+            <li>Includes a visualization of the simulation using OpenGL</li>
+          </ul>
+
+          <h4>K-Means Machine Learning</h4>
+          <ul>
+            <li>
+              A k-means machine learning algorithm optimized for performance
+              using C++ and CUDA GPU programming
+            </li>
+          </ul>
+
+          <h4 id="distfit">
+            Distfit<br />
+            (Undergraduate Research Project for
+            <a
+              href="https://www.ics.uci.edu/~wayne/research/students/"
+              target="_blank"
+            >
+              Wayne Hayes's Group at UCI</a
+            >, Winter 2020)
+          </h4>
+          <ul>
+            <li>
+              Python program that performs automated statistical tests, turning
+              research data into scientific results
+            </li>
+          </ul>
+
+          <h4>
+            <a
+              href="https://github.com/tjsantos/wiktionary-explorer"
+              target="_blank"
+              >Wiktionary Explorer</a
+            >
+          </h4>
+          <ul>
+            <li>
+              Python program to parse wiktionary's wikitext data format to
+              extract and transform pronunciation data into a structured format
+            </li>
+          </ul>
+
+          <hr />
         </div>
-      </div>
-    </nav>
-  </div>
-</header>
-<main>
-  <section id="work">
-    <div class="container">
-      <header class="d-flex align-items-last-baseline mt-8">
-      <h1 class="m-0">Projects</h1>
-      <div class="ml-auto text-align-right">
-        <p class="m-0">
-        Public source code on
-        <a href="https://github.com/tjsantos" target="_blank">GitHub</a>.
-        </p>
-      </div>
-      </header>
+      </section>
+      <section id="courses" class="container">
+        <h1>Courses</h1>
 
-      <hr>
-      <h2>Web Development</h2>
-
-      <h4>
-        Front-end Web Development at <a href="https://www.flux.ai/p">Flux.ai</a> (Jan. 2023 - Apr. 2024)
-      </h4>
-      <ul>
-        <li>
-          Implemented bug fixes and features for a browser-based PCB editor, with a focus on graphics,
-          rendering, and performance
-        </li>
-        <li>
-          Shipped code on instancing, camera behavior, visual testing, raycasting, GPU picking with
-          custom GLSL shaders, stenciling, and hover selection/interaction performance
-        </li>
-        <li>
-          Developed primarily using TypeScript, Three.js, React, React Three Fiber, WebGL, and GLSL
-        </li>
-      </ul>
-
-      <h4>
-        Approval Workflow Engine (Intern Project for <a href="https://www.govaris.com" target="_blank">Varis</a>, Summer 2022)
-      </h4>
-      <ul>
-        <li>
-          A business rules engine that processes purchase requests and
-          manages corresponding approval workflows
-        </li>
-        <li>
-          With extensive configuration options, users can edit business rules, approve or deny orders,
-          reprocess requests, and have comprehensive status updates, all from an intuitive web interface
-        </li>
-        <li>
-          Frontend UI using Javascript and React, backend API using Go, and
-          database access/design using PostgreSQL
-        </li>
-        <li>
-          Includes unit and integration tests with over 80% code coverage integrated into a CI/CD pipeline
-        </li>
-      </ul>
-
-      <h4 id="vesl">
-        <a href="https://vesl.jpl.nasa.gov/" target="_blank">
-          Virtual Earth System Laboratory
-        </a>
-        <br>
-        (Undergraduate Research Programming for JPL /
-        <a href="https://www.ics.uci.edu/~wayne/research/students/" target="_blank">
-          Wayne Hayes's Group at UCI</a>, Winter 2020)
-      </h4>
-      <ul>
-        <li>
-          Earth system science simulations and testing using JavaScript
-          and Playwright for web browser automation
-        </li>
-      </ul>
-
-      <h4><a href="https://codepen.io/collection/DaBwwK/" target="_blank">JavaScript 30</a></h4>
-      <ul>
-        <li>A collection of ~30 mini-projects using vanilla JavaScript</li>
-        <li>Based on the <a href="https://javascript30.com/" target="_blank">30-day coding challenge by Wes Bos</a></li>
-      </ul>
-
-      <h4><a href="https://codepen.io/tjsantos/pen/jwvPzB" target="_blank">Advanced CSS Example</a></h4>
-      <ul>
-        <li>Static website landing page featuring responsive design</li>
-        <li>Built for
-          <a href="https://www.edx.org/course/advanced-css-concepts-microsoft-dev218x" target="_blank">
-            Advanced CSS Concepts course</a>
-          by Microsoft
-        </li>
-      </ul>
-
-      <h4>
-        <a href="http://practiceipa.herokuapp.com/" target="_blank">Practice IPA</a>
-        (no longer maintained)
-      </h4>
-      <ul>
-        <li>Find word pronunciation with phonetic symbols (IPA) and audio</li>
-        <li>Quiz yourself and save progress on alphabets, frequency lists, and other word lists</li>
-        <li>Tech stack: Django (backend), Amazon S3 (file service), Heroku (deployment), Bootstrap (frontend)</li>
-      </ul>
-
-      <h4>
-        <a href="http://periscopin.herokuapp.com/" target="_blank">Periscopin</a>
-        (no longer maintained)
-      </h4>
-      <ul>
-        <li>Live stream agreggator of periscope broadcasts, displayed on a world map</li>
-        <li>Information obtained using Twitter API and web scraping from <a href="https://www.periscope.tv/" target="_blank">periscope.tv</a></li>
-      </ul>
-
-      <hr>
-      <h2>Computer Graphics</h2>
-
-      <h4>
-        <a href="https://tjsantos.github.io/graphics/rasterizer" target="_blank">
-          Rasterizer
-        </a>
-      </h4>
-      <ul>
-        <li>
-          A rasterizer built in C++ that renders SVG files
-        </li>
-        <li>
-          Supports texture mapping and anti-aliasing using trilinear filtering with mipmaps
-        </li>
-      </ul>
-
-      <h4>
-<!--         <a href="https://github.com/tjsantos/graphics" target="_blank"> -->
-          Mesh Editor
-<!--         </a> -->
-      </h4>
-      <ul>
-        <li>
-          A mesh editor built in C++ that can manipulate geometric mesh model data
-        </li>
-        <li>
-          Features include Bézier surface modeling,
-          local remeshing operations such as edge flips and edge splits,
-          and mesh upsampling via loop subdivision
-        </li>
-      </ul>
-
-      <h4>
-        <a href="https://tjsantos.github.io/graphics/ray-tracer" target="_blank">
-          Ray Tracer
-        </a>
-      </h4>
-      <ul>
-        <li>A physically based renderer using path tracing for global illumination</li>
-        <li>Uses a bounding volume hierarchy (BVH) as an acceleration structure for ray-object intersection</li>
-        <li>Uses adaptive sampling to reduce noise and improve rendering quality</li>
-      </ul>
-
-      <h4>
-        <!--         <a href="https://github.com/tjsantos/graphics" target="_blank"> -->
-        Cloth Simulation
-        <!--         </a> -->
-      </h4>
-      <ul>
-        <li>Real-time physical simulation of cloth with mass-spring computational modeling</li>
-        <li>
-          GLSL shader implementations for diffuse lighting, Blinn-Phong shading,
-          texture mapping, bump/displacement mapping, and environment-mapped reflections
-        </li>
-      </ul>
-
-      <h4><a href="https://tjsantos.github.io/quads" target="_blank">Quads</a></h4>
-      <ul><li>Computational pixel art: animate quadtrees of images using their color statistics</li></ul>
-
-      <h4><a href="https://tjsantos.github.io/natureincode/" target="_blank">Nature in Code Simulations</a></h4>
-      <ul><li>Biology simulations and visualizations using JavaScript</li></ul>
-
-      <hr>
-      <h2>Data Processing</h2>
-
-      <h4>
-        N-body Simulation
-      </h4>
-      <ul>
-        <li>
-          A parallelized N-body simulation in C++ using the MPI (Message Passing Interface) protocol
-          for high-performance computing, with optimizations using Barnes-Hut approximation
-          algorithms
-        </li>
-        <li>
-          Includes a visualization of the simulation using OpenGL
-        </li>
-      </ul>
-
-      <h4>
-        K-Means Machine Learning
-      </h4>
-      <ul>
-        <li>
-          A k-means machine learning algorithm optimized for performance using C++ and CUDA GPU programming
-        </li>
-      </ul>
-
-      <h4 id="distfit">
-        Distfit<br>
-        (Undergraduate Research Project for
-        <a href="https://www.ics.uci.edu/~wayne/research/students/" target="_blank">
-          Wayne Hayes's Group at UCI</a>, Winter 2020)
-      </h4>
-      <ul>
-        <li>
-          Python program that performs automated statistical tests, turning research data into scientific results
-        </li>
-      </ul>
-
-      <h4><a href="https://github.com/tjsantos/wiktionary-explorer" target="_blank">Wiktionary Explorer</a></h4>
-      <ul>
-        <li>Python program to parse wiktionary's wikitext data format to extract and transform pronunciation data into a structured format</li>
-      </ul>
-
-      <hr>
-    </div>
-  </section>
-  <section id="courses" class="container">
-    <h1>Courses</h1>
-
-    <h3>
-      M.S. Computer Science at UT Austin
-    </h3>
-    <ul>
-      <li>Computer Graphics</li>
-      <li>Parallel Systems</li>
-      <li>Numerical Linear Algebra</li>
-      <li>Optimization</li>
-      <li>Advanced Operating Systems</li>
-      <li>Advanced Algorithms</li>
-      <li>Deep Learning</li>
-      <li>Reinforcement Learning</li>
-      <li>Planning, Search, and Reasoning under Uncertainty</li>
-      <li>Virtualization</li>
-    </ul>
-
-    <h3>
-      Computer Science at UC Irvine
-    </h3>
-    <ul>
-      <li>Undergraduate Research
+        <h3>M.S. Computer Science at UT Austin</h3>
         <ul>
-          <li><a href="#distfit">Distfit</a></li>
-          <li><a href="#vesl">VESL</a></li>
+          <li>Computer Graphics</li>
+          <li>Parallel Systems</li>
+          <li>Numerical Linear Algebra</li>
+          <li>Optimization</li>
+          <li>Advanced Operating Systems</li>
+          <li>Advanced Algorithms</li>
+          <li>Deep Learning</li>
+          <li>Reinforcement Learning</li>
+          <li>Planning, Search, and Reasoning under Uncertainty</li>
+          <li>Virtualization</li>
         </ul>
-      </li>
-      <li>Computational Geometry</li>
-      <li>Computer Simulation</li>
-      <li>Applications of Probability in Computer Science</li>
-      <li>Operating Systems</li>
-      <li>Project in Databases and Web Applications</li>
-      <li>Computer Networks</li>
-      <li>Compilers</li>
-      <li>Programming Languages</li>
-      <li>Upper Division Math
+
+        <h3>Computer Science at UC Irvine</h3>
         <ul>
-          <li>Linear Algebra</li>
-          <li>Real Analysis</li>
-        </ul>
-      </li>
-    </ul>
-      <h3>
-          B.A. Physics at UC Berkeley
-      </h3>
-      <ul>
           <li>
-              <a href="https://physics.berkeley.edu/academics/undergraduate-degree/the-major-and-minor-program/goals-of-physics-major-usli">
-            Major requirements and overview
-          </a>
+            Undergraduate Research
+            <ul>
+              <li><a href="#distfit">Distfit</a></li>
+              <li><a href="#vesl">VESL</a></li>
+            </ul>
           </li>
-          <li>Undergraduate research studying magnetometry as part of
-              <a href="https://physics.berkeley.edu/research-faculty/budker-group">
-                  The Budker Group
-              </a>.
+          <li>Computational Geometry</li>
+          <li>Computer Simulation</li>
+          <li>Applications of Probability in Computer Science</li>
+          <li>Operating Systems</li>
+          <li>Project in Databases and Web Applications</li>
+          <li>Computer Networks</li>
+          <li>Compilers</li>
+          <li>Programming Languages</li>
+          <li>
+            Upper Division Math
+            <ul>
+              <li>Linear Algebra</li>
+              <li>Real Analysis</li>
+            </ul>
           </li>
-      </ul>
-      <h3>
-          Computer Science at UC Berkeley
-      </h3>
-      <ul>
+        </ul>
+        <h3>B.A. Physics at UC Berkeley</h3>
+        <ul>
+          <li>
+            <a
+              href="https://physics.berkeley.edu/academics/undergraduate-degree/the-major-and-minor-program/goals-of-physics-major-usli"
+            >
+              Major requirements and overview
+            </a>
+          </li>
+          <li>
+            Undergraduate research studying magnetometry as part of
+            <a
+              href="https://physics.berkeley.edu/research-faculty/budker-group"
+            >
+              The Budker Group </a
+            >.
+          </li>
+        </ul>
+        <h3>Computer Science at UC Berkeley</h3>
+        <ul>
           <li>CS 61A. The Structure and Interpretation of Computer Programs</li>
           <li>CS 61B. Data Structures</li>
-          <li>CS 61C. Great Ideas in Computer Architecture (Machine Structures)</li>
+          <li>
+            CS 61C. Great Ideas in Computer Architecture (Machine Structures)
+          </li>
           <li>CS 70. Discrete Mathematics and Probability Theory</li>
           <li>CS 169. Engineering Software as a Service</li>
-      </ul>
+        </ul>
 
-
-
-    <hr>
-    <div class="table-container">
-      <table>
-        <caption>
-          <h3>Online Courses</h3>
-        </caption>
-        <thead>
-        <tr>
-          <th>Provider</th>
-          <th>Course</th>
-          <th>Estimated Effort</th>
-          <th>Certificate</th>
-        </tr>
-        </thead>
-        <tbody>
-       <tr>
-          <td>
-            <a href="https://www.edx.org/school/mitx" target="_blank">
-              MITx
-            </a>
-          </td>
-          <td>
-            <a title="MITx MicroMasters"
-               href="https://www.edx.org/micromasters/mitx-statistics-and-data-science"
-               target="_blank">
-              MITx MicroMasters in Statistics and Data Science
-            </a>
-          </td>
-          <td>
-            600 hours
-          </td>
-          <td>
-            <a href="https://credentials.edx.org/records/programs/shared/812a40d7f29c4ccc80ee1199da4124af/" target="_blank">
-              Certificate (4/5)
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://www.edx.org/school/mitx" target="_blank">
-              MITx
-            </a>
-          </td>
-          <td>
-            <a title="6.005.1x"
-               href="https://www.edx.org/course/software-construction-java-mitx-6-005-1x"
-               target="_blank">
-              Software Construction in Java
-            </a>
-          </td>
-          <td>
-            100 hours
-          </td>
-          <td>
-            <a href="certs/6-005-1x.png" target="_blank">
-              Audit
-            </a>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="https://www.edx.org/school/mitx" target="_blank">
-              MITx
-            </a>
-          </td>
-          <td>
-            <a title="6.005.2x"
-               href="https://www.edx.org/course/advanced-software-construction-java-mitx-6-005-2x"
-               target="_blank">
-              Advanced Software Construction in Java
-            </a>
-          </td>
-          <td>
-            100 hours
-          </td>
-          <td>
-            <a href="certs/6-005-2x.png" target="_blank">
-              Audit
-            </a>
-          </td>
-        </tr>
-       <tr>
-           <td>
-               <a href="https://www.coursera.org/princeton" target="_blank">
-                   Coursera - Princeton
-               </a>
-           </td>
-           <td>
-               <a title="algs4partI" href="https://www.coursera.org/learn/algorithms-part1" target="_blank">
-                   Algorithms, Part I
-               </a>
-           </td>
-           <td>
-               60 hours
-           </td>
-           <td>
-               Audit
-           </td>
-       </tr>
-        <tr>
-          <td>
-            <a href="https://www.coursera.org/princeton" target="_blank">
-              Coursera - Princeton
-            </a>
-          </td>
-          <td>
-            <a title="algs4partII" href="https://www.coursera.org/learn/algorithms-part2" target="_blank">
-              Algorithms, Part II
-            </a>
-          </td>
-          <td>
-            60 hours
-          </td>
-          <td>
-            Audit
-          </td>
-        </tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-</main>
-</body>
+        <hr />
+        <div class="table-container">
+          <table>
+            <caption>
+              <h3>Online Courses</h3>
+            </caption>
+            <thead>
+              <tr>
+                <th>Provider</th>
+                <th>Course</th>
+                <th>Estimated Effort</th>
+                <th>Certificate</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <a href="https://www.edx.org/school/mitx" target="_blank">
+                    MITx
+                  </a>
+                </td>
+                <td>
+                  <a
+                    title="MITx MicroMasters"
+                    href="https://www.edx.org/micromasters/mitx-statistics-and-data-science"
+                    target="_blank"
+                  >
+                    MITx MicroMasters in Statistics and Data Science
+                  </a>
+                </td>
+                <td>600 hours</td>
+                <td>
+                  <a
+                    href="https://credentials.edx.org/records/programs/shared/812a40d7f29c4ccc80ee1199da4124af/"
+                    target="_blank"
+                  >
+                    Certificate (4/5)
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.edx.org/school/mitx" target="_blank">
+                    MITx
+                  </a>
+                </td>
+                <td>
+                  <a
+                    title="6.005.1x"
+                    href="https://www.edx.org/course/software-construction-java-mitx-6-005-1x"
+                    target="_blank"
+                  >
+                    Software Construction in Java
+                  </a>
+                </td>
+                <td>100 hours</td>
+                <td>
+                  <a href="certs/6-005-1x.png" target="_blank"> Audit </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.edx.org/school/mitx" target="_blank">
+                    MITx
+                  </a>
+                </td>
+                <td>
+                  <a
+                    title="6.005.2x"
+                    href="https://www.edx.org/course/advanced-software-construction-java-mitx-6-005-2x"
+                    target="_blank"
+                  >
+                    Advanced Software Construction in Java
+                  </a>
+                </td>
+                <td>100 hours</td>
+                <td>
+                  <a href="certs/6-005-2x.png" target="_blank"> Audit </a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.coursera.org/princeton" target="_blank">
+                    Coursera - Princeton
+                  </a>
+                </td>
+                <td>
+                  <a
+                    title="algs4partI"
+                    href="https://www.coursera.org/learn/algorithms-part1"
+                    target="_blank"
+                  >
+                    Algorithms, Part I
+                  </a>
+                </td>
+                <td>60 hours</td>
+                <td>Audit</td>
+              </tr>
+              <tr>
+                <td>
+                  <a href="https://www.coursera.org/princeton" target="_blank">
+                    Coursera - Princeton
+                  </a>
+                </td>
+                <td>
+                  <a
+                    title="algs4partII"
+                    href="https://www.coursera.org/learn/algorithms-part2"
+                    target="_blank"
+                  >
+                    Algorithms, Part II
+                  </a>
+                </td>
+                <td>60 hours</td>
+                <td>Audit</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
